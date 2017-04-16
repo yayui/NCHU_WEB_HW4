@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+	<style type="text/css"> 
+      body {
+	    background-image: url("bg_img.jpg");
+		position: absolute;
+		background-color: #96FFFF;
+		margin-top: 10%;
+		margin-left: 20%;
+		margin-right: 20%;
+		border-style:inset;
+		padding: 10px 10px 10px 10px;
+		font-family: sans-serif;
+      }	
+      .txt {
+	    color: white; 
+	  }
+	  a.back, a.source {
+	    color: #6EFFFF; 
+	  }
+    </style> 
+  </head>
+  <body>
+
+    <div class="img1">
+      <img src="rikkai_2.jpg"  alt="rikkai_2" height="562" width="408" />
+	</div>
+	<div class="txt">
+      <p>
+        《網球王子》中，立海大附中網球部正式隊員人物介紹。
+      </p> 
+      
+      <a href="http://baike.baidu.com/item/%E7%AB%8B%E6%B5%B7%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E4%B8%AD%E5%AD%A6/10013808?fromtitle=%E7%AB%8B%E6%B5%B7%E5%A4%A7&fromid=11042876" class="source">資料來源</a> 
+    </div> 
+    <p>
+	  <a href="./index.html" class="back">回主頁</a>
+	</p>
+	
+    <script>
+	  //fadeTo()
+      $(document).ready(function() { 
+        $("div").click(function () { 
+          $(this).fadeTo("slow", Math.random()); 
+        }); 
+      }); 
+    </script>
+  </body>
+</html>
